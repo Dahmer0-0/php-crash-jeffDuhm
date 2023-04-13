@@ -2,10 +2,10 @@
 /* ------------- Cookies ------------ */
 
 /*
-  Cookies are a mechanism for storing data in the remote browser and thus tracking or identifying return users. You can set specific data to be stored in the browser, and then retrieve it when the user visits the site again.
+  Las cookies son un mecanismo para almacenar datos en el navegador remoto y, por lo tanto, rastrear o identificar a los usuarios que regresan. Puede configurar datos específicos para que se almacenen en el navegador y luego recuperarlos cuando el usuario visite el sitio nuevamente.
 */
 
-// Since cookies are stored on the client, you shouldn't store sensitive data in them. Sessions are a better choice for storing sensitive data.
+// Dado que las cookies se almacenan en el cliente, no debe almacenar datos confidenciales en ellas. Las sesiones son una mejor opción para almacenar datos confidenciales.
 
 // Set a cookie
 setcookie('name', 'Brad', time() + 86400 * 30); // 86400 = 1 day
