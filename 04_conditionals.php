@@ -45,8 +45,8 @@ if ($t < 12) {
   echo 'Have a good evening!';
 }
 
-// Check if an array is empty
-// The isset() function will generate a warning or e-notice when the variable does not exists. The empty() function will not generate any warning or e-notice when the variable does not exists.
+// Comprobar si una matriz está vacía
+// La función isset() generará una advertencia o un aviso electrónico cuando la variable no exista. La función de empty() no generará ninguna advertencia o notificación electrónica cuando la variable no existe.
 
 $posts = [];
 
@@ -58,26 +58,27 @@ if (!empty($posts[0])) {
 
 /* -------- Ternary Operator -------- */
 /*
-  The ternary operator is a shorthand if statement.
+  El operador ternario es una declaración if abreviada.
   Ternary Syntax:
     condition ? true : false;
 */
 
-// Echo based on a condition (Same as above)
+// Echo basado en una condición (Igual que arriba)
 echo !empty($posts[0]) ? $posts[0] : 'There are no posts';
 
-// Assign a variable based on a condition
+
+// Asignar una variable basada en una condición
 $firstPost = !empty($posts[0]) ? $posts[0] : 'There are no posts';
 
 $firstPost = !empty($posts[0]) ? $posts[0] : null;
 
-// Null Coalescing Operator ?? (PHP 7.4)
-// Will return null if $posts is empty
-// Always returns first parameter, unless first parameter happens to be NULL
+// Operador coalescente nulo ?? (PHP 7.4)
+// Devolverá nulo si $posts está vacío
+// Siempre devuelve el primer parámetro, a menos que el primer parámetro sea NULL
 $firstPost = $posts[0] ?? null;
 
 var_dump($firstPost);
-
+  
 /* -------- Switch Statements ------- */
 
 $favcolor = 'red';
