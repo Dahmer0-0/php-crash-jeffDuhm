@@ -11,13 +11,13 @@ $string = 'Hello World';
 // Get the length of a string
 echo strlen($string);
 
-// Find the position of the first occurrence of a substring in a string
+// Encuentra la posición de la primera aparición de una subcadena en una cadena
 echo strpos($string, 'o');
 
-// Find the position of the last occurrence of a substring in a string
+// Encuentra la posición de la última aparición de una subcadena en una cadena
 echo strrpos($string, 'o');
 
-// Reverse a string
+// Reverse a string -Invertir una cadena
 echo strrev($string);
 
 // Convert all characters to lowercase
@@ -32,7 +32,7 @@ echo ucwords($string);
 // String replace
 echo str_replace('World', 'Everyone', $string);
 
-// Return portion of a string specified by the offset and length
+// Return portion of a string specified by the offset and length - Devolver parte de una cadena especificada por el desplazamiento y la longitud
 echo substr($string, 0, 5);
 echo substr($string, 5);
 
@@ -50,7 +50,7 @@ if (str_ends_with($string, 'ld')) {
 $string2 = '<h1>Hello World</h1>';
 echo htmlentities($string2);
 
-// Formatted Strings - useful when you have outside data
-// Different specifiers for different data types
+// Cadenas formateadas: útil cuando tiene datos externos
+// Diferentes especificadores para diferentes tipos de datos
 printf('%s is a %s', 'Brad', 'nice guy');
 printf('1 + 1 = %f', 1 + 1); // float
