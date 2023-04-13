@@ -2,7 +2,7 @@
 /* --- Sanitizing Inputs -- */
 
 /*
-  Data submitted through a form is not sanitized by default. We have methods to sanitize data manually.
+  Los datos enviados a través de un formulario no se desinfectan de forma predeterminada. Tenemos métodos para desinfectar los datos manualmente.
 */
 
 if (isset($_POST['submit'])) {
@@ -13,24 +13,24 @@ if (isset($_POST['submit'])) {
   // $name = htmlspecialchars($_POST['name']);
   // $email = htmlspecialchars($_POST['email']);
 
-  // filter_var() - Sanitize data
+  // filter_var() - Desinfectar datos
   // $name = filter_var($_POST['name'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
   // $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
-  // filter_input() - Sanitize inputs
+  // filter_input() - Desinfectar entradas
   $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
   $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 
-  // FILTER_SANITIZE_STRING - Convert string to string with only alphanumeric, whitespace, and the following characters - _.:/
-  // FILTER_SANITIZE_EMAIL - Convert string to a valid email address
-  // FILTER_SANITIZE_URL - Convert string to a valid URL
+  // FILTER_SANITIZE_STRING - Convierta cadena en cadena con solo caracteres alfanuméricos, espacios en blanco y los siguientes caracteres - _.:/
+  // FILTER_SANITIZE_EMAIL - Convertir cadena a una dirección de correo electrónico válida
+  // FILTER_SANITIZE_URL - Convertir cadena a una URL válida
   // FILTER_SANITIZE_NUMBER_INT - Convert string to an integer
   // FILTER_SANITIZE_NUMBER_FLOAT - Convert string to a float
-  // FILTER_SANITIZE_FULL_SPECIAL_CHARS - HTML-encodes special characters, keeps spaces and most other characters
+  // FILTER_SANITIZE_FULL_SPECIAL_CHARS - HTML codifica caracteres especiales, mantiene espacios y la mayoría de los demás caracteres
 } ?>
 
 <!-- Pass data through a form -->
-<!-- php_self can be used for xss -->
+<!-- php_self se puede usar para xss-->
 <form action="<?php echo htmlspecialchars(
   $_SERVER['PHP_SELF']
 ); ?>" method="POST">
