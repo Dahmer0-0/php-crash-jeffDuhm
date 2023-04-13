@@ -1,17 +1,17 @@
 <?php
 /* ---------- Superglobals ---------- */
-//Built in variables that are always available in all scopes
+//Variables integradas que siempre están disponibles en todos los ámbitos.
 
 /*
-  $GLOBALS - A superglobal variable that holds information about any variables in global scope.
-  $_GET - Contains information about variables passed through a URL or a form.
-  $_POST -  Contains information about variables passed through a form.
-  $_COOKIE - Contains information about variables passed through a cookie.
-  $_SESSION - Contains information about variables passed through a session.
-  $_SERVER - Contains information about the server environment.
-  $_ENV - Contains information about the environment variables.
-  $_FILES -  Contains information about files uploaded to the script.
-  $_REQUEST - Contains information about variables passed through the form or URL.
+  $GLOBALS - Una variable superglobal que contiene información sobre cualquier variable en el ámbito global.
+  $_GET - Contiene información sobre variables pasadas a través de una URL o un formulario
+  $_POST -  Contiene información sobre las variables pasadas a través de un formulario.
+  $_COOKIE - Contiene información sobre las variables que se pasan a través de una cookie.
+  $_SESSION - Contiene información sobre las variables pasadas a través de una sesión.
+  $_SERVER - Contiene información sobre el entorno del servidor.
+  $_ENV - Contiene información sobre las variables de entorno.
+  $_FILES -  Contiene información sobre los archivos cargados en el script.
+  $_REQUEST - Contiene información sobre las variables pasadas a través del formulario o URL.
 */
 
 // var_dump($GLOBALS);
