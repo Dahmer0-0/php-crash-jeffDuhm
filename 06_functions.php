@@ -7,7 +7,7 @@
     // code to be executed
   }
 
-  - Functions have their own local scope as opposed to global scope
+  - Las funciones tienen su propio alcance local a diferencia del alcance global
 */
 
 function registerUser()
@@ -15,19 +15,19 @@ function registerUser()
   echo 'User has been registered!';
 }
 
-// Running a function
+// Ejecutar una función
 registerUser();
 
-// Adding params
+// Agregar parámetros
 function registerUser2($username)
 {
   echo "User ${username} has been registered!";
 }
 
-// Pass in an argument
+// Pasar en un argumento
 registerUser2('Brad');
 
-// Returning values
+// Valores devueltos
 function add($num1, $num2)
 {
   return $num1 + $num2;
@@ -36,7 +36,7 @@ function add($num1, $num2)
 $sum = add(5, 5);
 echo $sum;
 
-// Adding default values
+// Adición de valores predeterminados
 function subtract($num1 = 10, $num2 = 5)
 {
   return $num1 - $num2;
@@ -44,14 +44,14 @@ function subtract($num1 = 10, $num2 = 5)
 
 echo subtract();
 
-// Assigning anonymous functions to variables. Often used for closures and callback functions
+// Asignación de funciones anónimas a variables. A menudo se usa para cierres y funciones de devolución de llamada.
 $add = function ($num1, $num2) {
   return $num1 + $num2;
 };
 
 echo $add(5, 5);
 
-// Arrow functions
+// Funciones de flecha
 $multiply = fn($num1, $num2) => $num1 * $num2;
 
 echo $multiply(5, 5);
