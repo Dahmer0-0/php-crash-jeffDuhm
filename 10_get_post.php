@@ -2,21 +2,22 @@
 /* --- $_GET & $_POST Superglobals -- */
 
 /*
-  We can pass data through urls and forms using the $_GET and $_POST superglobals.
+  Podemos pasar datos a través de direcciones URL y formularios usando las superglobales $_GET y $_POST.
 */
 
+// Si está establecido...
 if (isset($_POST['submit'])) {
   // echo '<h3>' . $GET['username'] . '</h3>';
   echo '<h3>' . $_POST['username'] . '</h3>';
 } ?>
 
-<!-- Pass data through a link -->
+<!-- Pasar datos a través de un enlace -->
 <a href="<?php echo $_SERVER['PHP_SELF']; ?>?username=Brad">Link</a>
 
 
 <br><br>
 
-<!-- Pass data through a form -->
+<!-- Pasar datos a través de un formulario -->
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 <div>
   <label>Name: </label>
