@@ -2,43 +2,43 @@
 
 /* ----- Variables & Data Types ----- */
 
-/* --------- PHP Data Types --------- */
+/* --------- Tipos de datos PHP --------- */
 /*
-- String - A string is a series of characters surrounded by quotes
-- Integer - Whole numbers
+- String - Una cadena es una serie de caracteres entre comillas
+- Integer - Números enteros
 - Float - Decimal numbers
 - Boolean - true or false
-- Array - An array is a special variable, which can hold more than one value
+- Array - Una matriz es una variable especial, que puede contener más de un valor
 - Object - A class
-- NULL - Empty variable
-- Resource - A special variable that holds a resource
+- NULL - Variable vacía
+- Resource - Una variable especial que contiene un recurso.
 */
 
 /* --------- Variable Rules --------- */
 /*
-- Variables must be prefixed with $
-- Variables must start with a letter or the underscore character
-- variables can't start with a number
-- Variables can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-- Variables are case-sensitive ($name and $NAME are two different variables)
-*/
+- Las variables deben tener el prefijo $
+- Las variables deben comenzar con una letra o el carácter de subrayado
+- Las variables no pueden comenzar con un número.
+- Las variables solo pueden contener caracteres alfanuméricos y guiones bajos (A-z, 0-9 y _)
+- Las variables distinguen entre mayúsculas y minúsculas ($nombre y $NOMBRE son dos variables diferentes)
+*/ 
 
-$name = 'Brad'; // String // Can be single or double quotes
+$name = 'Brad'; // String // Pueden ser comillas simples o dobles
 $age = 40; // Integer
 $hasKids = true; // Boolean
 $cashOnHand = 10.5; //Float
 
 var_dump($cashOnHand);
 
-/* --- Adding variables to strings -- */
+/* --- Adición de variables a cadenas -- */
 
-// Double quotes can be used to add variables to strings
+// Las comillas dobles se pueden usar para agregar variables a las cadenas
 echo "$name is $age years old";
 
 // Better to do this
 echo "${name} is ${age} years old";
 
-// Concatenate Strings
+// Concatenar cadenas
 
 echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
 
