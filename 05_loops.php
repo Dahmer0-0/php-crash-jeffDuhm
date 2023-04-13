@@ -39,7 +39,7 @@ while ($x <= 5) {
   // code to be executed
   } while (condition);
 
-do...while loop will always execute the block of code once, even if the condition is false.
+do...while siempre ejecutará el bloque de código una vez, incluso si la condición es falsa.
 */
 
 do {
@@ -56,7 +56,7 @@ do {
   }
 */
 
-// Loop through an array
+// Bucle a través de una matriz
 
 $numbers = [1, 2, 3, 4, 5];
 
@@ -64,7 +64,7 @@ foreach ($numbers as $x) {
   echo "Number: $x <br>";
 }
 
-// Use the indexes within the loop
+// Usar los índices dentro del ciclo
 
 $posts = ['Post One', 'Post Two', 'Post Three'];
 
@@ -72,7 +72,7 @@ foreach ($posts as $index => $post) {
   echo "${index} - ${post} <br>";
 }
 
-// Use the keys within the loop for an associative array
+// Use las llaves dentro del ciclo para una matriz asociativa (dicccionario)
 
 $person = [
   'first_name' => 'Brad',
@@ -80,7 +80,7 @@ $person = [
   'email' => 'brad@gmail.com',
 ];
 
-// Get Keys
+// Obtener Keys
 foreach ($person as $key => $val) {
   echo "${key} - ${val} <br>";
 }
